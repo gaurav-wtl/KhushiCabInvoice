@@ -91,8 +91,8 @@ const CreateInvoice = () => {
               </tr>
               <tr style="background-color: #ffffff;">
                 <td style="padding: 8px; border: 1px solid #ddd;">6</td>
-                <td style="padding: 8px; border: 1px solid #ddd;">Pickup Time:</td>
-                <td style="padding: 8px; border: 1px solid #ddd;">${data.startTime}</td>
+                <td style="padding: 8px; border: 1px solid #ddd;">Return Date:</td>
+                <td style="padding: 8px; border: 1px solid #ddd;">${data.endDate}</td>
               </tr>
               <tr style="background-color: #f9f9f9;">
                 <td style="padding: 8px; border: 1px solid #ddd;">7</td>
