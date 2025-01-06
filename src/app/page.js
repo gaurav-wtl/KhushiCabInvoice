@@ -45,73 +45,76 @@ const CreateInvoice = () => {
               Website: khushicabservices.com<br />
               GST No.: 27AATCA5944R1ZL
           </div>
-        <div style="width: 48%; text-align: right; font-size: 14px; line-height: 1.6; color: #333;">
-            <strong style="font-size: 16px;">${data.companyName}</strong><br />
-            Customer Name: ${data.passengerName}<br />
-            Company Name: ${data.companyEmail}<br />
-            Company Mobile: ${data.companyMobile}<br />
-            Company GST: ${data.companyGST}<br />
-            Invoice No: #${id.id}
-        </div>
+        <div style="width: 48%; text-align: right; font-size: 14px; line-height: 1.6; color: #333; padding-right: 10px;">
+    <strong style="font-size: 16px; display: block; margin-bottom: 4px; margin-right: 27px;">${data.companyName}</strong>
+    <span style="display: block; margin-bottom: 4px; margin-right: 70px;">Customer Name: ${data.passengerName}</span>
+    <span style="display: block; margin-bottom: 4px; margin-right: 63px">Company Name: ${data.companyEmail}</span>
+    <span style="display: block; margin-bottom: 4px; margin-right: 40px">Company Mobile: ${data.companyMobile}</span>
+    <span style="display: block; margin-bottom: 4px; margin-right: 108px">Company GST: ${data.companyGST}</span>
+    <span style="display: block; margin-right: 130px">Invoice No: #${id.id}</span>
+</div>
+
+
+
     </div>
     <div style="width: 98%; margin:auto;">
         <table style="border-collapse: collapse;width: 100%;">
             <thead>
               <tr>
-                <th style="padding: 12px; width: 150px; background-color: rgb(255, 51, 0); color: white; text-align: left; border: 1px solid #ddd;">Serial Number</th>
+                <th style="padding: 12px; width: 150px; background-color: rgb(255, 51, 0); color: white; text-align: left; border: 1px solid #ddd; text-align: center;">Sr. No.</th>
                 <th style="padding: 12px; background-color: rgb(255, 51, 0); color: white; text-align: left; border: 1px solid #ddd;">Item</th>
                 <th style="padding: 12px; background-color: rgb(255, 51, 0); color: white; text-align: left; border: 1px solid #ddd;">Details</th>
               </tr>
             </thead>
             <tbody>
               <tr style="background-color: #f9f9f9;">
-                <td style="padding: 8px; border: 1px solid #ddd;">1</td>
-                <td style="padding: 8px; border: 1px solid #ddd;">Pickup Location:</td>
+                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">1</td>
+                <td style="padding: 8px; border: 1px solid #ddd;">Pickup Location</td>
                 <td style="padding: 8px; border: 1px solid #ddd;">${data.pickupLocation}</td>
               </tr>
               <tr style="background-color: #ffffff;">
-                <td style="padding: 8px; border: 1px solid #ddd;">2</td>
-                <td style="padding: 8px; border: 1px solid #ddd;">Drop Location:</td>
+                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">2</td>
+                <td style="padding: 8px; border: 1px solid #ddd;">Drop Location</td>
                 <td style="padding: 8px; border: 1px solid #ddd;">${data.dropLocation}</td>
               </tr>
               <tr style="background-color: #f9f9f9;">
-                <td style="padding: 8px; border: 1px solid #ddd;">3</td>
-                <td style="padding: 8px; border: 1px solid #ddd;">Journey Type:</td>
+                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">3</td>
+                <td style="padding: 8px; border: 1px solid #ddd;">Journey Type</td>
                 <td style="padding: 8px; border: 1px solid #ddd;">${data.journeyType}</td>
               </tr>
               <tr style="background-color: #ffffff;">
-                <td style="padding: 8px; border: 1px solid #ddd;">4</td>
-                <td style="padding: 8px; border: 1px solid #ddd;">Distance (Km):</td>
+                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">4</td>
+                <td style="padding: 8px; border: 1px solid #ddd;">Distance (Km)</td>
                 <td style="padding: 8px; border: 1px solid #ddd;">${data.distance}</td>
               </tr>
               <tr style="background-color: #f9f9f9;">
-                <td style="padding: 8px; border: 1px solid #ddd;">5</td>
-                <td style="padding: 8px; border: 1px solid #ddd;">Pickup Date:</td>
+                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">5</td>
+                <td style="padding: 8px; border: 1px solid #ddd;">Pickup Date</td>
                 <td style="padding: 8px; border: 1px solid #ddd;">${data.startDate}</td>
               </tr>
               <tr style="background-color: #ffffff;">
-                <td style="padding: 8px; border: 1px solid #ddd;">6</td>
-                <td style="padding: 8px; border: 1px solid #ddd;">Return Date:</td>
+                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">6</td>
+                <td style="padding: 8px; border: 1px solid #ddd;">Return Date</td>
                 <td style="padding: 8px; border: 1px solid #ddd;">${data.endDate}</td>
               </tr>
               <tr style="background-color: #f9f9f9;">
-                <td style="padding: 8px; border: 1px solid #ddd;">7</td>
-                <td style="padding: 8px; border: 1px solid #ddd;">Vehicle Type:</td>
+                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">7</td>
+                <td style="padding: 8px; border: 1px solid #ddd;">Vehicle Type</td>
                 <td style="padding: 8px; border: 1px solid #ddd;">${data.vehicleType}</td>
               </tr>
               <tr style="background-color: #ffffff;">
-                <td style="padding: 8px; border: 1px solid #ddd;">8</td>
-                <td style="padding: 8px; border: 1px solid #ddd;">Base Fare:</td>
+                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">8</td>
+                <td style="padding: 8px; border: 1px solid #ddd;">Base Fare</td>
                 <td style="padding: 8px; border: 1px solid #ddd;">${data.baseFare}</td>
               </tr>
               <tr style="background-color: #f9f9f9;">
-                <td style="padding: 8px; border: 1px solid #ddd;">9</td>
-                <td style="padding: 8px; border: 1px solid #ddd;">Driver Allowance:</td>
+                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">9</td>
+                <td style="padding: 8px; border: 1px solid #ddd;">Driver Allowance</td>
                 <td style="padding: 8px; border: 1px solid #ddd;">${data.driverAllownce}</td>
               </tr>
               <tr style="background-color: #ffffff;">
-                <td style="padding: 8px; border: 1px solid #ddd;">10</td>
-                <td style="padding: 8px; border: 1px solid #ddd;">Toll, Parking & Tax:</td>
+                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">10</td>
+                <td style="padding: 8px; border: 1px solid #ddd;">Toll, Parking & Tax</td>
                 <td style="padding: 8px; border: 1px solid #ddd;">${data.toll}</td>
               </tr>
               <tr style="background-color: #f9f9f9;">
