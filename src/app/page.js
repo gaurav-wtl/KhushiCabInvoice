@@ -107,13 +107,13 @@ const CreateInvoice = () => {
               Website: khushicabservices.com<br />
               GST No.: 27AATCA5944R1ZL
           </div>
-        <div style="width: 48%; text-align: right; font-size: 14px; line-height: 1; color: #333; padding-right: 10px;">
+        <div style="width: content; font-size: 14px; line-height: 1; color: #333; padding-right: 10px;">
     <strong style="font-size: 16px; display: block; margin-bottom: 4px; margin-right: 27px;">${data.companyName}</strong>
-    <span style="display: block; margin-bottom: 4px; margin-right: 27px;">Customer Name: ${data.passengerName}</span>
-    <span style="display: block; margin-bottom: 4px; margin-right: 27px">Company Name: ${data.companyEmail}</span>
-    <span style="display: block; margin-bottom: 4px; margin-right: 27px">Company Mobile: ${data.companyMobile}</span>
-    <span style="display: block; margin-bottom: 4px; margin-right: 27px">Company GST: ${data.companyGST}</span>
-    <span style="display: block; margin-right: 27px">Invoice No: #${id.id}</span>
+    <p style="display: block; margin-bottom: 4px; margin-right: 27px;">Customer Name: ${data.passengerName}</p>
+    <p style="display: block; margin-bottom: 4px; margin-right: 27px">Company Email: ${data.companyEmail}</p>
+    <p style="display: block; margin-bottom: 4px; margin-right: 27px">Company Mobile: ${data.companyMobile}</p>
+    <p style="display: block; margin-bottom: 4px; margin-right: 27px">Company GST: ${data.companyGST}</p>
+    <p style="display: block; margin-right: 27px">Invoice No: #${id.id}</p>
 </div>
 
 
