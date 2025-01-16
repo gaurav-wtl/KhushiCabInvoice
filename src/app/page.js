@@ -297,6 +297,23 @@ const CreateInvoice = () => {
           />
         </div>
 
+         {/* Journey Type */}
+         <div>
+          <label htmlFor="jtype" className="block text-sm font-medium text-gray-600">Journey Type</label>
+          <select
+            id="jtype"
+            name="jtype"
+            value={data.journeyType}
+            onChange={(e) => setData({ ...data, journeyType: e.target.value })}
+            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+          >
+            <option value="">Select Journey Type</option>
+            <option value="oneway">One Way Trip</option>
+            <option value="roundtrip">Round Trip</option>
+            <option value="rental">Rental Trip</option>
+          </select>
+        </div>
+
         {/* Company Email */}
         <div>
           <label htmlFor="cemail" className="block text-sm font-medium text-gray-600">Company Email</label>
@@ -443,22 +460,7 @@ const CreateInvoice = () => {
           </>
         )}
 
-        {/* Journey Type */}
-        <div>
-          <label htmlFor="jtype" className="block text-sm font-medium text-gray-600">Journey Type</label>
-          <select
-            id="jtype"
-            name="jtype"
-            value={data.journeyType}
-            onChange={(e) => setData({ ...data, journeyType: e.target.value })}
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-          >
-            <option value="">Select Journey Type</option>
-            <option value="oneway">One Way Trip</option>
-            <option value="roundtrip">Round Trip</option>
-            <option value="rental">Rental Trip</option>
-          </select>
-        </div>
+       
 
 
 
