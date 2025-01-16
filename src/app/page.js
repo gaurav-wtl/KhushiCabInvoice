@@ -47,6 +47,7 @@ const CreateInvoice = () => {
     }
 
     setTotal(data.totalAmount);
+    console.log(data.baseFare, "base fair price");
   }, [data.baseFare, data.paidAmount, data.driverAllowance, data.toll, data.parking, data.extraHrs, data.extraKM, data.extraPrice, data.extraPriceHrs, data.distance])
 
   const handleFormSubmit = async (e) => {
@@ -230,7 +231,7 @@ const CreateInvoice = () => {
               </tr>
               <tr style="background-color: #f9f9f9;">
                 <td style="padding: 6px; border: 1px solid #ddd;">GST</td>
-                <td style="padding: 6px; border: 1px solid #ddd;">${Math.floor((12 / 100) * ((+data.toll) + (+data.baseFare) + (+data.driverAllowance) + (+data.parking))).toFixed(2)}</td>
+                <td style="padding: 6px; border: 1px solid #ddd;">${Math.floor((12 / 100) * ((+data.toll) + (+data.baseFare) + (+data.driverAllowance) + (+data.parking))).toFixed(2)} (12% GST)</td>
               </tr>
               <tr style="background-color: #ffffff;">
                 <td style="padding: 6px; border: 1px solid #ddd;">SUBTOTAL</td>
@@ -265,9 +266,17 @@ const CreateInvoice = () => {
       const html2pdf = (await import('html2pdf.js')).default;
       html2pdf().from(tempDiv).save('invoice.pdf');
 
-
+     
 
     }
+
+    setData({
+      passengerName: "", journeyType: "", companyName: "",
+      companyEmail: "", companyGST: "", companyMobile: "", pickupLocation: "", dropLocation: "",
+      distance: "", startDate: "", startTime: "", endDate: "", endTime: "", vehicleType: "", baseFare: "", driverAllowance: "0", toll: "0", parking: "0",
+      serviceCharge: "0", subtotal: "0", paidAmount: "0", remainingAmount: "0", companyType: "",
+      invoiceFor: "", bookedBy: "", driverContact:"",extraHrs:"", extraKM:"", rentalType: "", extraPrice:0, totalHrs: 0,extraPriceHrs: 0, totalAmount: 0
+    });
 
   }
 
